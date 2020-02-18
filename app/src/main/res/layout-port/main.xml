@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/mainTextBlock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="кликабельно"
+            android:textColor="#000000"
+            android:textSize="10mm" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/blockCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="block" />
+
+        <Button
+            android:id="@+id/chooseSizeTypeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_weight="0"
+            android:onClick="sizeButtonListener"
+            android:text="size" />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/blockCheckBox3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:text="block" />
+
+    <Button
+        android:id="@+id/chooseSizeTypeButton3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_weight="5"
+        android:onClick="sizeButtonListener"
+        android:text="size" />
+</LinearLayout>
